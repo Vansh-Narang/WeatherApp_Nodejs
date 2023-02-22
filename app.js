@@ -18,7 +18,7 @@ app.post('/', (req, res) => {
             const weatherdata = JSON.parse(data);
             //  console.log(weatherdata)
             try {
-                const temperature = weatherdata?.main?.temp;
+                let temperature = weatherdata?.main?.temp;
                 let pressure = weatherdata?.main?.pressure
                 // const descr = weatherdata?.weather[0]?.description;
                 //more than one send method use (write instead of send)
